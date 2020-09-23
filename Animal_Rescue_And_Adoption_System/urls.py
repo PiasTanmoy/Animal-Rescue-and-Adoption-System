@@ -16,12 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from RescueFormManagement import views as normaluser_views
+from AnimalAdoptionForm import views as adoption_views
 from animals import views as animal_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('normalusers/', normaluser_views.showNormalusers, name='normalusers'),
     path('rescueform/', normaluser_views.insertNormaluser, name='rescueform'),
+
     path('', include('UserManager.urls')),
+
     path('animals/', animal_views.showAnimals, name='animals'),
+
+    path('adoptions/', adoption_views.showAdoptions, name='adoptions'),
+    path('insertadopter/', adoption_views.insertAdopter, name='insertadopter'),
 ]

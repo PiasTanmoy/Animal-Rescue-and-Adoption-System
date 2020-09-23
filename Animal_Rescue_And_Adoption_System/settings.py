@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'RescueFormManagement.apps.RescueformmanagementConfig',
     'UserManager.apps.UsermanagerConfig',
     'animals.apps.AnimalsConfig',
+    'AnimalAdoptionForm.apps.AnimaladoptionformConfig',
 ]
 
 MIDDLEWARE = [
