@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'RescueFormManagement.apps.RescueformmanagementConfig'
+    'RescueFormManagement.apps.RescueformmanagementConfig',
+    'UserManager.apps.UsermanagerConfig',
 ]
 
 MIDDLEWARE = [
