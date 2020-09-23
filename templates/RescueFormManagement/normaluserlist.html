@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for n in normalusers %}
+        <h2>Normaluser info: {{ n.id }}</h2>
+        {{ n.name }} <br>
+        {{ n.phone_no }} <br>
+        {{ n.location }} <br>
+
+    {% endfor %}
+
+{% endblock content %}
