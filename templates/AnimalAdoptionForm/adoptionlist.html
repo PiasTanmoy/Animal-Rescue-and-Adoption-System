@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+{%  block content %}
+
+    {% for a in adoptions %}
+        <h2>Adoption info:  {{ a.id }} </h2>
+        {{ a.name }} <br>
+        {{ a.contact_no }} <br>
+        {{ a.present_address }} <br>
+        {{ a.nid_no }} <br>
+
+    {% endfor %}
+
+{% endblock content %}
