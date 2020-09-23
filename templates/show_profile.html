@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body>
+    <h1>Profile List</h1>
+
+    {% for p in Profiles  %}
+        Name: {{ p.first_name }}
+        {{ p.middle_name }}
+        {{ p.last_name }}<br>
+        {{ p.street }},
+        {{ p.city }},
+        Zip: {{ p.post_code }} <br>
+        NID : {{ p.nid_no }} <br>
+        Phone: {{ p.phone_no }} <br>
+        <img src="" alt=""> <br><br>
+    {% endfor %}
+</body>
+</html>
