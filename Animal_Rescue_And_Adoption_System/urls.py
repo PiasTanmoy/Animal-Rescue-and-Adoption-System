@@ -14,11 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from RescueFormManagement import views as normaluser_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('normalusers/', normaluser_views.showNormalusers, name='normalusers'),
-    path('rescueform/', normaluser_views.insertNormaluser, name='rescueform')
+    path('rescueform/', normaluser_views.insertNormaluser, name='rescueform'),
+    path('', include('UserManager.urls')),
 ]
