@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'RescueFormManagement.apps.RescueformmanagementConfig',
     'UserManager.apps.UsermanagerConfig',
+    'animals.apps.AnimalsConfig',
 ]
 
 MIDDLEWARE = [
